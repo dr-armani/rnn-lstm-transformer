@@ -1,3 +1,3 @@
-# Comparing LSTM to Transformers for Predicting Stock Market Prices 
+# Comparing RNN, LSTM and Transformers models for Predicting Stock Market Prices 
 
-Forecasting Stock Prices using Transformers and LSTM: Comparative Analysis
+Forecasting Stock Prices using RNN, LSTM and Transformers: A Comparative Analysis
