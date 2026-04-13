@@ -1,5 +1,3 @@
-# RNN vs LSTM Stock Forecasting — Cursor Prompt
-
 **Role:** Act as a Senior AI Research Engineer and Educator.
 
 **Objective:** Write a complete, self-contained, production-quality Python script named
