@@ -31,7 +31,7 @@ Include these instructions as a comment block at the top of the script:
 
 ---
 
-## 1. Imports & Global Configuration
+## 1. Global Configuration
 
 ```python
 TICKERS         = ['AAPL', 'MSFT', 'GOOGL']
@@ -45,9 +45,6 @@ DROPOUT         = 0.2
 INITIAL_CAPITAL = 1000.0
 SEED            = 1
 ```
-
-Set `matplotlib.use('Agg')` immediately after importing matplotlib so plots render
-correctly in all environments (no display required).
 
 Device detection — support all three backends in priority order:
 ```python
@@ -177,8 +174,11 @@ Multi-stock switching strategy — run separately for RNN signals and LSTM signa
 
 ## 8. Plots
 
+Set `matplotlib.use('Agg')` immediately after importing matplotlib so plots render
+correctly in all environments (no display required).  
+
 Use `matplotlib.use('Agg')` and save every plot with `plt.savefig(filename, dpi=150)`.
-Never call `plt.show()`. Close each figure with `plt.close()` immediately after saving.
+Never call `plt.show()`. Close each figure with `plt.close()` immediately after saving.  
 
 **Plot 1 — Loss curves** (`plot_01_loss_curves_{ticker}.png`, one per ticker)
 - 4 lines: RNN train (blue solid), RNN val (blue dashed), LSTM train (orange solid),
